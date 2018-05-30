@@ -1,31 +1,48 @@
 body {
-  /* background-image: url("../images/white.png"); */
-  background-color: silver;
-  background-repeat: no-repeat;  
+  background-image: url("../images/white.png");
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
   background-size: cover;
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.85);
+  /* background-color: rgba(255, 255, 255, 0.85); */
   padding: 10px;
 }
 
-/* .intropic{
-    background-image: url("../images/js.png");
-    width: 100%;
-} */
+.pic {
+  float: left;
+  margin-right: 10px;
+}
 
+.navbar {
+  background-color: rgb(59, 85, 106);
+  /* top of the picture color */
+}
+
+#introimage {
+  width: 100%;
+}
 
 .container {
   padding-top: 20px;
 }
 
+#resumeimage {
+  width: 100%;
+}
+.page-footer {
+  margin: auto;
+}
 
-/* .addpaddingforjump {
-    padding-top: 50px;
-} */
+.addpaddingforjump {
+  padding-top: 50px;
+}
+
+#copyright p {
+  text-align: center;
+}
 
 #navleftside li {
   float: left;
@@ -41,27 +58,36 @@ body {
   margin: 3px;
 }
 
-.page-footer {
-  text-align: center;
+html,
+body {
+  height: 100%;
 }
 
+.introimage {
+  background-image: url("../images/placeholder.png");
+  background-color: rgba(255, 255, 255, 0.85);
+  min-height: 640px;
+  min-width: 100%;
+  color: white;
+  position: relative;
+  background-repeat: no-repeat;
+}
 
-/* footer stuff stolen completely off internet*/
+.asdasd {
+  position: absolute;
+  margin: auto;
+  bottom: 10;
+}
+.asdasd {
+  position: absolute;
+  margin: auto;
+  bottom: 200;
+}
 
-html, body {
-    height: 100%;
-  }
-  body {
-    display: flex;
-    flex-direction: column;
-  }
- .content {
-    flex: 1 0 auto; 
-  }
-  .footer {
-    flex-shrink: 0;
-  }
-
-  /* .page-footer{
-      border: 2px solid black;
-  } */
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}

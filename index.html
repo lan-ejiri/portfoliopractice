@@ -13,51 +13,79 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script type="text/javascript" src="/assets/javascript/javascript.js"></script>
 
     <title>Lan Ejiri</title>
 </head>
 
+<script>
+    $(document).ready(function () {
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 1000, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
+
 <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="navlinks" id="navleftside">
-                <ul>
-                    <li>
-                        <a href="#about"><b>Lan Ejiri</b></a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="navlinks" id="navrightside">
-                <ul>
-                    <li>
-                        <a href="#contact">Contact Me!</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="navbar-fixed">
+            <nav class="navbar navbar-default">
+                <div class="navlinks" id="navleftside">
+                    <ul>
+                        <li>
+                            <a href="#about">
+                                <b>Lan Ejiri</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#resume">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navlinks" id="navrightside">
+                    <ul>
+                        <li>
+                            <a href="#contact">Contact Me!</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
     </div>
     <!--closing container-fluid div -->
 
-    <div class="container">
+    <div class='center introimage'>
 
-        <div class="row intropic">
-            <div class="addpaddingforjump">
-                <h1>Lan Ejiri</h1>
-                <h5>Full Stack Web Developer with a B.S. in Industrial Engineering</h5>
-            </div>
-
-
+        <div class="asdasdd">
+            <h1>Lan Ejiri</h1>
+            <h5>Full Stack Web Developer with a B.S. in Industrial Engineering</h5>
         </div>
+
+        <a href="#about">
+            <i class="material-icons center medium asdasd">arrow_downward</i>
+        </a>
+    </div>
+
+
+
+    <div class="container">
 
         <div class="row">
             <div class="addpaddingforjump" id="about">
@@ -111,9 +139,9 @@
                                     <i class="material-icons right">more_vert</i>
                                 </span>
                                 <p>
-                                    <a href="https://whispering-lowlands-19007.herokuapp.com/">Click here to see app in action</a>
+                                    <a href="https://whispering-lowlands-19007.herokuapp.com/" target="_blank">See app in action</a>
                                     <br>
-                                    <a href="https://github.com/EitanFine/Project-3">Click here to see the code</a>
+                                    <a href="https://github.com/EitanFine/Project-3" target="_blank">See the code</a>
                                 </p>
                             </div>
                             <div class="card-reveal">
@@ -131,26 +159,24 @@
                     <div class="col s4">
                         <div class="card small">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="assets/images/stuff.png">
+                                <img class="activator" src="assets/images/scrape.png">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">"Stuff"
+                                <span class="card-title activator grey-text text-darken-4">Kotaku Article Scraper
                                     <i class="material-icons right">more_vert</i>
                                 </span>
                                 <p>
-                                    <a href="https://whispering-lowlands-19007.herokuapp.com/">Click here to see app in action</a>
+                                    <a href="https://kotaku-scrape.herokuapp.com/" target="_blank">Scrape some articles</a>
                                     <br>
-                                    <a href="https://github.com/EitanFine/Project-3">Click here to see the code</a>
+                                    <a href="https://github.com/lan-ejiri/article-scrape-hw" target="_blank">See the code</a>
                                 </p>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">"Stuff"
+                                <span class="card-title grey-text text-darken-4">Kotaku Article Scraper
                                     <i class="material-icons right">close</i>
                                 </span>
                                 <br>
-                                <p>A full-stack app made from scratch using MySQL, Express.js, React and NodeJS. The goal of
-                                    this app is to make it easier for people to be able to rent out their belongings that
-                                    they don't always use or to share their skills and charge them as services.</p>
+                                <p>asdasdasdasdasdasd</p>
                             </div>
                         </div>
                     </div>
@@ -158,124 +184,92 @@
                     <div class="col s4">
                         <div class="card small">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="assets/images/stuff.png">
+                                <img class="activator" src="assets/images/trivia.png">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">"Stuff"
+                                <span class="card-title activator grey-text text-darken-4">JavaScript Trivia Game
                                     <i class="material-icons right">more_vert</i>
                                 </span>
                                 <p>
-                                    <a href="https://whispering-lowlands-19007.herokuapp.com/">Click here to see app in action</a>
+                                    <a href="https://lan-ejiri.github.io/Trivia-Game/" target="_blank">Play the game</a>
                                     <br>
-                                    <a href="https://github.com/EitanFine/Project-3">Click here to see the code</a>
+                                    <a href="https://github.com/lan-ejiri/Trivia-Game" target="_blank">See the code</a>
                                 </p>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">"Stuff"
+                                <span class="card-title grey-text text-darken-4">Trivia Game
                                     <i class="material-icons right">close</i>
                                 </span>
                                 <br>
-                                <p>A full-stack app made from scratch using MySQL, Express.js, React and NodeJS. The goal of
-                                    this app is to make it easier for people to be able to rent out their belongings that
-                                    they don't always use or to share their skills and charge them as services.</p>
+                                <p>A simple sci-fi trivia game using Javascript, HTML, and CSS that shows only one question until the player answers it or their time runs out. There's ten questions total, give it a try!</p>
                             </div>
                         </div>
                     </div>
-                    <!--                    
-
-
-
-
-                    <div class="gallery" id="stuff">
-                        <a href="https://whispering-lowlands-19007.herokuapp.com/" target="_blank">
-                            <img class="galleryimg" src="assets/images/stuff.png" alt="placeholder for stuff">
-
-                            <div class="gallerylabel">
-                                "Stuff" >>>on hover, show description link the github somewhere too https://github.com/EitanFine/Project-3
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="gallery" id="crystalgame">
-                        <a href="https://lan-ejiri.github.io/CrystalsCollector-Game/">
-                            <img class="galleryimg" src="assets/images/cat2.jpg" alt="placeholder for rpggame">
-
-                            <div class="gallerylabel">
-                                Crystal Collector Game
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="gallery" id="triviagame">
-                        <a href="https://lan-ejiri.github.io/Trivia-Game/">
-                            <img class="galleryimg" src="assets/images/cat3.jpg" alt="placeholder for triviagame" width="200px">
-
-                            <div class="gallerylabel">
-                                Trivia Game
-                            </div>
-                        </a>
-                    </div>
-
-                </div> -->
-
-
+                
                 </div>
+
+
             </div>
-            <div class="row">
-                <div class="addpaddingforjump" id='resume'>
-                    eiher portfolio or resume whichever one wasnt first
-                </div>
+        </div>
+        <div class="row">
+            <div class="addpaddingforjump" id='resume'>
+                <h1>Resume</h1>
+
+
             </div>
-            <div class="row">
-                <div class="addpaddingforjump" id='contact'>
-                    contact info //my email, phone, linkedin, github //their name, email, message.
+        </div>
+        <div class="row">
+            <div class="addpaddingforjump" id='contact'>
+                <div class="CONTACTPLACEHOLDER">
+                    <h1>Contact Me</h1>
+                    <hr>
+                    <h5>I'd love to work on a project with you. Please reach out:
+                    </h5>
+                    <i class="material-icons medium">email</i> lan.ejiri@yahoo.com
+                    <i class="material-icons medium">phone</i> (908) 723-6591
+                    <i class="fab fa-linkedin fa-5x"></i>
+                    <i class="fab fa-github-square fa-5x"></i>
 
-                    <div class="CONTACTPLACEHOLDER">
-                        <h1>Contact</h1>
-                        <hr>
+                    <form class="formelements">
 
-                        <form class="formelements">
+                        <div id="formname">
+                            Name:
+                            <br>
+                            <input type="text" name="name" placeholder="John Doe" size="136">
+                            <br>
+                        </div>
 
-                            <div id="formname">
-                                Name:
-                                <br>
-                                <input type="text" name="name" placeholder="John Doe" size="136">
-                                <br>
-                            </div>
+                        <div id="formemail">
+                            Email:
+                            <br>
+                            <input type="email" name="email" placeholder="example@gmail.com" size="136">
+                            <br>
+                        </div>
 
-                            <div id="formemail">
-                                Email:
-                                <br>
-                                <input type="email" name="email" placeholder="example@gmail.com" size="136">
-                                <br>
-                            </div>
+                        <div id="formmessage">
+                            Message:
+                            <br>
+                            <textarea type="text" name="message" rows="10" cols="123"></textarea>
+                            <br>
+                        </div>
 
-                            <div id="formmessage">
-                                Message:
-                                <br>
-                                <textarea type="text" name="message" rows="10" cols="123"></textarea>
-                                <br>
-                            </div>
+                        <div id="formsubmit">
+                            <button type="button">Submit</button>
+                        </div>
 
-                            <div id="formsubmit">
-                                <button type="button">Submit</button>
-                            </div>
-
-                        </form>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <!--//closing container div -->
+    </div>
+    <!--//closing container div -->
 
+
+    <nav>
         <div class="container-fluid">
-            <footer class='page-footer'>
-                <div class='footer-copyright'>
-                    <p id="copyright"> Copyright &copy; </p>
-
-                </div>
-            </footer>
+            <p class="center" href="#">Copyright &copy;</p>
         </div>
+    </nav>
 
 </body>
 
