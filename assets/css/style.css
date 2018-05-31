@@ -66,17 +66,20 @@ body {
 .introimage {
   background-image: url("../images/placeholder.png");
   background-color: rgba(255, 255, 255, 0.85);
-  min-height: 640px;
-  min-width: 100%;
+  min-height: 100%;
+  /* min-width: 100%; */
   color: white;
   position: relative;
   background-repeat: no-repeat;
+  background-position: cover; 
+
 }
 
 .asdasd {
   position: absolute;
   margin: auto;
   bottom: 10;
+  color: white;
 }
 .asdasd {
   position: absolute;
