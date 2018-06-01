@@ -86,18 +86,18 @@ body {
   background-color: rgba(255, 255, 255, 0.85);
   min-height: 100%;
   /* min-width: 100%; */
-  position: relative;
+  /* position: relative; */
   background-repeat: no-repeat;
   background-position: cover;
-  background-size: 100% 100%;
+  background-size: 100%;
   color: white;
 }
 
 .blurb {
-  position: absolute;
-  /* margin: auto; */
-  top: 15px;
-  left: 30%;
+  /* position: absolute; */
+  margin: auto;
+  /* top: 15px;
+  left: 30%; */
   color: white;
   /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19); */
 }
@@ -106,13 +106,14 @@ i.icon-white {
   color: white;
 }
 .arrow {
-  position: absolute;
+  /* position: absolute; */
   color: white;
-  /* margin: auto; */
-  top: 200px;
-  left: 50%;
+  margin: auto;
+  width: 65px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
   border-radius: 50%;
+
+ 
 }
 
 body {
