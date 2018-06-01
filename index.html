@@ -55,15 +55,17 @@
 
     </div>
     <!--closing container-fluid div -->
-<!-- figure out how to get this shbit to take up the whole page -->
-    <div class='center introimage'>
-        <div class="asdasdd">
+    <!-- figure out how to get this shbit to take up the whole page -->
+    <div class='center introdiv'>
+        <div class="blurb">
             <h1>Lan Ejiri</h1>
             <h5>Full Stack Web Developer with a B.S. in Industrial Engineering</h5>
         </div>
-        <a href="#about">
-            <i class="material-icons center medium asdasd">arrow_downward</i>
-        </a>
+        <div class="arrow">
+            <a href="#about">
+                <i class="material-icons center medium icon-white">arrow_downward</i>
+            </a>
+        </div>       
     </div>
 
 
@@ -76,16 +78,15 @@
                 <div class="ABOUT ME PLACEHOLDER">
                     <h1>About Me</h1>
                     <hr>
-                    <img class="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg" alt="asdfsdfsadfsadF"
-                        width="300px">
-                    <p>I am an aspiring fullstack web developer. I have a Bachelors Degree in Industrial Engineering, and am
-                        currently working toward a fullstack web development certificate from Rutgers Coding Bootcamp.</p>
+                    <img class="pic responsive-img" src="assets/images/lan.png" alt="asdfsdfsadfsadF" width="300px">
+                    <p>My name is Lan Ejiri and I am a fullstack web developer with certification from the Rutgers Web Development
+                        Coding Bootcamp. I also have a Bachelors Degree in Industrial Engineering.</p>
                     <br>
-                    <p>Unable to land a job in a completely relevant field as my major, I picked up a job as a Draftsman at
-                        a small woodwoorking tool manufacturing company. I gained many valuable work experiences from working
-                        there for a year and a half, such at learning how to get along with coworkers and getting used to
-                        demanding work flow. However, this was not what I wanted to do for the rest of my life. I hoped that
-                        with my background in engineering, learning to code would help me land a better job.</p>
+                    <p>Right after graduating, I picked up a job as a Draftsman at a small woodwoorking tool manufacturing company.
+                        I gained many valuable work experiences from working there for a year and a half, such at learning
+                        how to get along with coworkers and getting used to demanding work flow. However, this was not what
+                        I wanted to do for the rest of my life. I hoped that with my background in engineering, learning
+                        to code would help me land a better job.</p>
                     <br>
                     <p>My experiences before this drafting job includes mostly different types of tutoring. I have done 1-on-1
                         sessions with college peers for classes I took in previous semesters. I have worked for giant corporations
@@ -96,8 +97,8 @@
                         because of these opportunities.
                     </p>
                     <br>
-                    <p>Upon completing this program, I would like to earn a job in the tech field for a large company, but I
-                        suspect I may have to freelance for a while to build up a formidable portfolio.</p>
+                    <p>I would like to earn a job in the tech field for a large company, but I am happy to pick up any other
+                        jobs to gain experience and become a better coder. </p>
                 </div>
 
             </div>
@@ -107,11 +108,8 @@
             <div class="addpaddingforjump" id='portfolio'>
 
                 <div class="PLACEHOLDERR">
-                    <h1>Portfolio</h1>
+                    <h1>Projects</h1>
                     <hr>
-
-
-
                     <div class="col s4">
                         <div class="card small">
                             <div class="card-image waves-effect waves-block waves-light">
@@ -201,12 +199,7 @@
         <div class="row">
             <div class="addpaddingforjump" id='resume'>
                 <h1>Resume</h1>
-                <object data="/pdf/sample-3pp.pdf#page=2" type="application/pdf" width="100%" height="100%">
-                    <p>
-                        <b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view
-                        it:
-                        <a href="/pdf/sample-3pp.pdf">Download PDF</a>.</p>
-                </object>
+               //put pdf here
 
             </div>
         </div>
@@ -217,10 +210,25 @@
                     <hr>
                     <h5>I'd love to work on a project with you. Please reach out:
                     </h5>
-                    <i class="material-icons medium">email</i> lan.ejiri@yahoo.com
-                    <i class="material-icons medium">phone</i> (908) 723-6591
-                    <i class="fab fa-linkedin fa-5x"></i>
-                    <i class="fab fa-github-square fa-5x"></i>
+                    <div class='icons'>
+                        <div class='iconthing leftside email'>
+                            <i class="material-icons medium">email</i> lan.ejiri@yahoo.com
+                        </div>
+                        <div class='iconthing leftside'>
+                            <i class="material-icons medium">phone</i> (908) 723-6591
+                        </div>
+                        <div class='iconthing rightside'>
+                            <i class="fab fa-linkedin fa-5x"></i>
+                            <a href="https://www.linkedin.com/in/lanejiri/">lanejiri</a>
+                        </div>
+                        <div class='iconthing rightside'>
+                            <i class="fab fa-github-square fa-5x"></i>
+                            <a href='https://github.com/lan-ejiri'>lan-ejiri</a>
+
+                        </div>
+                    </div>
+                    <hr>
+
 
                     <form class="formelements">
 
@@ -259,8 +267,7 @@
 
     <nav>
         <div class="container-fluid">
-            <p class="center" href="#">Copyright &copy; 
-                Cover image by
+            <p class="center" href="#">Copyright &copy; Cover image by
                 <a href='http://www.holguin.photography/'>Holguin Photography</a>
             </p>
 
