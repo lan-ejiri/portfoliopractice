@@ -30,6 +30,13 @@ body {
 #introimage {
   width: 100%;
 }
+#contact {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
 
 .container {
   padding-top: 20px;
@@ -38,8 +45,13 @@ body {
 #resumeimage {
   width: 100%;
 }
-.page-footer {
+.footer {
   margin: auto;
+  background-color: rgb(59, 85, 106);
+}
+.footerwords {
+  margin-bottom: 5px;
+
 }
 
 .addpaddingforjump {
@@ -113,4 +125,21 @@ body {
 
 p {
   line-height: 1.5em;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.rightside {
+  float: right;
+}
+.leftside {
+  float: left;
+}
+
+.iconthing {
+  position: relative;
+  text-align: center;
 }
